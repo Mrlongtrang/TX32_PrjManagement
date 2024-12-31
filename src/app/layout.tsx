@@ -6,37 +6,58 @@ export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <Link
-          href="projects"
-          className="font-bold text-orange-600 hover:text-pink-400">
-          Projects
-        </Link>
-        <Link
-          href="tasks"
-          className="font-bold text-orange-600 hover:text-pink-400">
-          Tasks
-        </Link>
-        <Link
-          href="workLogs"
-          className="font-bold text-orange-600 hover:text-pink-400">
-          Work Logs
-        </Link>
-        <Link
-          href="performances"
-          className="font-bold text-orange-600 hover:text-pink-400">
-          Performances
-        </Link>
-        <Link
-          href="settings"
-          className="font-bold text-orange-600 hover:text-pink-400">
-          Settings
-        </Link>
-        <Link
-          href="login"
-          className="font-bold text-orange-600 hover:text-pink-400">
-          Log in
-        </Link>
-        <main>{children}</main>
+        <div className="w-full">
+          <header className="flex flex-row justify-between p-4 bg-gray-800">
+            <h1 className="text-2xl font-bold text-white">Project Management</h1>
+            <div className="flex flex-row gap-4">
+              <Link
+                href="login"
+                className="font-bold text-white hover:text-green-400">
+                Log in
+              </Link>
+              <Link
+                href="signup"
+                className="font-bold text-white hover:text-green-400">
+                Sign up
+              </Link>
+            </div>
+          </header>
+        </div>
+        <div className="flex flex-row justify-between gap-4 p-2 w-full">
+          <div className="flex flex-col justify-center w-1/6 p-5 border-2 border-gray-500 gap-4 rounded-md">
+            <Link
+              href="projects"
+              className="font-bold text-orange-600 hover:text-pink-400 hover:bg-gray-100 active:bg-gray-400">
+              Projects
+            </Link>
+            <Link
+              href="tasks"
+              className="font-bold text-orange-600 hover:text-pink-400">
+              Tasks
+            </Link>
+            <Link
+              href="workLogs"
+              className="font-bold text-orange-600 hover:text-pink-400">
+              Work Logs
+            </Link>
+            <Link
+              href="performances"
+              className="font-bold text-orange-600 hover:text-pink-400">
+              Performances
+            </Link>
+            <Link
+              href="settings"
+              className="font-bold text-orange-600 hover:text-pink-400">
+              Settings
+            </Link>
+            <Link
+              href="login"
+              className="font-bold text-orange-600 hover:text-pink-400">
+              Log in
+            </Link>
+          </div>
+          <main className="w-5/6 pl-10 border-2 border-gray-400 rounded-md">{children}</main>
+        </div>
       </body>
     </html>
   );
