@@ -9,45 +9,38 @@ export default function Navbar() {
       <div className="flex flex-col justify-between gap-4">
         <Link
           href="projects"
-          className={`font-bold hover:text-pink-400 transition-all duration-300 transform hover:scale-105 ${
-            pathname === "/projects" ? "text-green-500" : "text-orange-600"
+          className={`font-medium p-2 rounded-sm hover:text-slate-400 transition-all duration-300 transform hover:scale-105 ${
+            pathname === "/projects" ? "text-slate-700 bg-slate-200 shadow-md" : "text-slate-400"
           }`}>
           Projects
         </Link>
         <Link
           href="tasks"
-          className={`font-bold hover:text-pink-400 transition-all duration-300 transform hover:scale-105 ${
-            pathname === "/tasks" ? "text-green-500" : "text-orange-600"
+          className={`font-medium p-2 rounded-sm hover:text-slate-400 transition-all duration-300 transform hover:scale-105 ${
+            pathname === "/tasks" ? "text-slate-700 bg-slate-200 shadow-md" : "text-slate-400"
           }`}>
           Tasks
         </Link>
         <Link
           href="workLogs"
-          className={`font-bold hover:text-pink-400 transition-all duration-300 transform hover:scale-105 ${
-            pathname === "/workLogs" ? "text-green-500" : "text-orange-600"
+          className={`font-medium p-2 rounded-sm hover:text-slate-400 transition-all duration-300 transform hover:scale-105 ${
+            pathname === "/workLogs" ? "text-slate-700 bg-slate-200 shadow-md" : "text-slate-400"
           }`}>
           Work Logs
         </Link>
         <Link
           href="performances"
-          className={`font-bold hover:text-pink-400 transition-all duration-300 transform hover:scale-105 ${
-            pathname === "/performances" ? "text-green-500" : "text-orange-600"
+          className={`font-medium p-2 rounded-sm hover:text-slate-400 transition-all duration-300 transform hover:scale-105 ${
+            pathname === "/performances" ? "text-slate-700 bg-slate-200 shadow-md" : "text-slate-400"
           }`}>
           Performances
         </Link>
         <Link
           href="settings"
-          className={`font-bold hover:text-pink-400 transition-all duration-300 transform hover:scale-105 ${
-            pathname === "/settings" ? "text-green-500" : "text-orange-600"
+          className={`font-medium p-2 rounded-sm hover:text-slate-400 transition-all duration-300 transform hover:scale-105 ${
+            pathname === "/settings" ? "text-slate-700 bg-slate-200 shadow-md" : "text-slate-400"
           }`}>
           Settings
-        </Link>
-        <Link
-          href="login"
-          className={`font-bold hover:text-pink-400 transition-all duration-300 transform hover:scale-105 ${
-            pathname === "/login" ? "text-green-500" : "text-orange-600"
-          }`}>
-          Log in
         </Link>
       </div>
   );
