@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col justify-center w-full mt-16 ml-16">
+    <div className="flex flex-col justify-center w-fit">
       <h1 className="text-2xl font-bold text-gray-900">
         Projects page
       </h1>
