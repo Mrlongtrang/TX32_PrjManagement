@@ -12,7 +12,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
           <div className="flex flex-col justify-between w-1/6 p-3 border-2 border-gray-200 gap-4 rounded-md shadow-md">
             <Navbar />
           </div>
-          <main className="w-5/6 pl-10 border-2 border-gray-200 bg-slate-100 rounded-md shadow-md">
+          <main className="w-5/6 border-2 border-gray-200 bg-slate-100 rounded-md shadow-md">
             <div className="bg-white">{children}</div>
           </main>
         </div>
