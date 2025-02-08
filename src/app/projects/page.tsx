@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-export  function TaskManagerPage(){
+
 export default function Projects() {
     const TaskManagerPage: React.FC = () => {
       const [timers, setTimers] = useState<{ [key: string]: number }>({
@@ -86,6 +86,4 @@ export default function Projects() {
         </div>
       );
     };
-    
-}
 }
