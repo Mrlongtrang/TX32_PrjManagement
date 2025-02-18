@@ -18,11 +18,7 @@ export default function Topbar() {
             className="font-bold text-white hover:text-green-400">
             Log in
           </Link>
-          <Link
-            href="signup"
-            className="font-bold text-white hover:text-green-400">
-            Sign up
-          </Link>
+          
         </div>
       </header>
     </div>
