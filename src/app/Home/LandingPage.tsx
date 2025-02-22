@@ -9,9 +9,9 @@ const LandingPage: React.FC = () => {
       <section className="h-screen flex flex-col items-center justify-center text-center p-6">
         <h1 className="text-5xl font-bold mb-4">Welcome to Our Product</h1>
         <p className="text-lg mb-6">The best solution for your needs.</p>
-        <Link href="/login">
+        <Link href="/signup">
           <button className="bg-blue-500 px-6 py-3 rounded-lg text-white font-bold hover:bg-blue-600">
-            Sign Up Now
+            Get Started
           </button>
         </Link>
       </section>
@@ -33,6 +33,16 @@ const LandingPage: React.FC = () => {
             <p>Improve your workflow</p>
           </div>
         </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-blue-600 text-center">
+        <h2 className="text-3xl font-bold mb-4">Start using our product today</h2>
+        <Link href="/signup">
+          <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-200">
+            Sign Up Now
+          </button>
+        </Link>
       </section>
 
       {/* Footer */}
