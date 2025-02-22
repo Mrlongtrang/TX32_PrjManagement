@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  devcontainer:
+    image: mcr.microsoft.com/devcontainers/base:ubuntu-20.04
+    volumes:
+      - ../..:/workspaces:cached
+    command: sleep infinity
+    network_mode: service:mongo
+
+  mongo:
+    image: skazuki/alpine-mongodb
+    restart: always
+
+  mongo-express:
+    container_name: mongo-express
+    image: skazuki/alpine-mongo-express
+    restart: always
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=mongo
+      - VCAP_APP_HOST=0.0.0.0
+      - VCAP_APP_PORT=8081
+    network_mode: service:mongo
+
+networks:
+  devcontainer:
